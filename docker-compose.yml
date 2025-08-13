@@ -1,13 +1,28 @@
 
+version: '3.8'
+
 services:
-  mysql:
-    image: mysql:latest
+
+  db:
+
+    image: mysql:8.0
+
+
+    container_name: jdbc-mysql
+
+
+    restart: always
+
     ports:
       - "3306:3306"
+
     environment:
       MYSQL_ROOT_PASSWORD: 'root'
-    volumes:
-      - jdbc_tributino_data:/var/lib/mysql
+      MYSQL_DATABASE: 'anime_store'
 
+    volumes:
+      - jdbc_data:/var/lib/mysql
+
+# Declaração do volume para que o Docker o gerencie.
 volumes:
-  jdbc_tributino_data:
+  jdbc_data:
