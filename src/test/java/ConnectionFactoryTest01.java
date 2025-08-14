@@ -7,6 +7,7 @@ import service.ProducerService;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.List;
 
 
 @Log4j2
@@ -16,7 +17,8 @@ public class ConnectionFactoryTest01 {
         Producer producerToUpdate = Producer.builder().id(10).name("MADHOUSE").build();
         //        ProducerService.save(producer);
 //        ProducerService.delete(5);
-        ProducerService.update(producerToUpdate);
-
+//        ProducerService.update(producerToUpdate);
+        List<Producer> producers = ProducerService.findAll();
+        log.info("Producers found '{}'", producers);
     }
 }
