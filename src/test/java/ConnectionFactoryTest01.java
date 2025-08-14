@@ -13,13 +13,10 @@ import java.sql.Statement;
 public class ConnectionFactoryTest01 {
     public static void main(String[] args) {
         Producer producer = Producer.builder().name("Studio Deen").build();
-        //ProducerService.save(producer);
-        ProducerService.delete(4);
-        ProducerService.delete(5);
-        ProducerService.delete(6);
-        ProducerService.delete(7);
-        ProducerService.delete(8);
-        ProducerService.delete(9);
+        Producer producerToUpdate = Producer.builder().id(10).name("MADHOUSE").build();
+        //        ProducerService.save(producer);
+//        ProducerService.delete(5);
+        ProducerService.update(producerToUpdate);
 
     }
 }
