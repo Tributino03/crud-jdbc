@@ -1,9 +1,7 @@
-package dominio;
+package crud.dominio;
 
 import lombok.Builder;
 import lombok.Value;
-
-import java.util.Objects;
 
 @Value
 @Builder

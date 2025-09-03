@@ -1,5 +1,5 @@
-import dominio.Producer;
-import service.ProducerService;
+import jdbc.dominio.Producer;
+import jdbc.service.ProducerService;
 
 import java.util.List;
 

@@ -1,7 +1,7 @@
-package service;
+package jdbc.service;
 
-import dominio.Producer;
-import repository.ProducerRepositoryRowSet;
+import jdbc.dominio.Producer;
+import jdbc.repository.ProducerRepositoryRowSet;
 
 import java.util.List;
 

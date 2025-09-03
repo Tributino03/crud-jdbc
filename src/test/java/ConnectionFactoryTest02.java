@@ -1,8 +1,6 @@
-import dominio.Producer;
+import jdbc.dominio.Producer;
 import lombok.extern.log4j.Log4j2;
-import service.ProducerServiceRowSet;
-
-import java.util.List;
+import jdbc.service.ProducerServiceRowSet;
 
 @Log4j2
 public class ConnectionFactoryTest02 {

@@ -1,4 +1,4 @@
-package jdbc;
+package jdbc.conn;
 
 
 import javax.sql.rowset.CachedRowSet;

@@ -1,12 +1,7 @@
-import dominio.Producer;
-import jdbc.ConnectionFactory;
+import jdbc.dominio.Producer;
 import lombok.extern.log4j.Log4j2;
-import repository.ProducerRepository;
-import service.ProducerService;
+import jdbc.service.ProducerService;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.util.List;
 
 

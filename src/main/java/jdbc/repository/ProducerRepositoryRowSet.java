@@ -1,8 +1,8 @@
-package repository;
+package jdbc.repository;
 
-import dominio.Producer;
-import jdbc.ConnectionFactory;
-import listener.CustomRowSetListener;
+import jdbc.dominio.Producer;
+import jdbc.conn.ConnectionFactory;
+import jdbc.listener.CustomRowSetListener;
 
 import javax.sql.rowset.CachedRowSet;
 import javax.sql.rowset.JdbcRowSet;
